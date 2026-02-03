@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viktor Cikojević, PhD | ML Research Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0E5484;
+            --dark: #1a1a1a;
+            --gray: #666;
+            --light: #f8f9fa;
+            --border: #e0e0e0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: var(--light);
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--primary);
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .location {
+            color: var(--gray);
+            margin-bottom: 12px;
+        }
+        
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .links a {
+            color: var(--primary);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        
+        .links a:hover {
+            text-decoration: underline;
+        }
+        
+        section {
+            margin-bottom: 28px;
+        }
+        
+        h2 {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--dark);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 6px;
+            margin-bottom: 14px;
+        }
+        
+        .about-intro {
+            margin-bottom: 12px;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 6px;
+        }
+        
+        .job {
+            margin-bottom: 20px;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 4px;
+        }
+        
+        .job-title {
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        
+        .job-date {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+        
+        .job-company {
+            font-style: italic;
+            color: var(--gray);
+            margin-bottom: 8px;
+        }
+        
+        .job-company a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .job ul {
+            font-size: 0.95rem;
+        }
+        
+        .kaggle-intro {
+            margin-bottom: 10px;
+        }
+        
+        .competition {
+            margin-bottom: 4px;
+        }
+        
+        .competition strong {
+            color: var(--dark);
+        }
+        
+        .publication {
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+        }
+        
+        .pub-label {
+            font-weight: 600;
+        }
+        
+        .skills-grid {
+            display: grid;
+            gap: 8px;
+        }
+        
+        .skill-row {
+            display: flex;
+            gap: 8px;
+        }
+        
+        .skill-label {
+            font-weight: 600;
+            min-width: 130px;
+        }
+        
+        a {
+            color: var(--primary);
+        }
+        
+        .interests {
+            color: var(--gray);
+        }
+        
+        @media (max-width: 600px) {
+            .job-header {
+                flex-direction: column;
+            }
+            .skill-row {
+                flex-direction: column;
+                gap: 2px;
+            }
+            .skill-label {
+                min-width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Viktor Cikojević, PhD</h1>
+            <div class="location">Split, Croatia</div>
+            <div class="links">
+                <a href="mailto:cikojevic.viktor@gmail.com"><i class="fas fa-envelope"></i> cikojevic.viktor@gmail.com</a>
+                <a href="https://linkedin.com/in/viktor-cikojevic-9546161a2" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/viktorcikojevic" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.kaggle.com/viktorcikojevic" target="_blank"><i class="fas fa-chart-bar"></i> Kaggle</a>
+                <a href="https://scholar.google.com/citations?user=LbRhAdIAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>About Me</h2>
+            <p class="about-intro">Physicist turned Machine Learning Research Engineer building production ML systems and decision-centric generative AI weather models.</p>
+            <ul>
+                <li>Co-authored GEM-2 (equal contribution): probabilistic transformer with state-of-the-art economic value metrics for actionable forecasting.</li>
+                <li>Strong production stack: Python, PyTorch, GCP, large-scale data pipelines, distributed workflows (xarray/dask).</li>
+                <li>PhD in computational physics: Monte Carlo methods, scientific computing, and research track record (~300 citations).</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Experience & Education</h2>
+            
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title">Machine Learning Research Engineer</span>
+                    <span class="job-date">Dec 2023 – Mar 2026 (2 yrs 3 mos)</span>
+                </div>
+                <div class="job-company"><a href="https://www.salientpredictions.com/" target="_blank">Salient Predictions</a> · Split, Croatia (remote)</div>
+                <ul>
+                    <li>Co-authored GEM-2 (equal contribution): probabilistic transformer achieving state-of-the-art economic value metrics for weather forecasting.</li>
+                    <li>20–100x training efficiency vs. SOTA; paper: <a href="https://arxiv.org/abs/2601.03753" target="_blank">arXiv:2601.03753</a></li>
+                    <li>Developed generative AI weather model leading to <a href="https://www.salientpredictions.com/blog/webinar-recording---next-gen-forecasting-salients-new-model-and-what-it-means-for-you" target="_blank">GEM v1 release</a>.</li>
+                    <li>Co-invented 2 US patents on deep-learning weather forecasting (incl. GEM-2).</li>
+                    <li>Built v9 model: +20% skill score vs previous model.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title">Data Scientist</span>
+                    <span class="job-date">Jan 2022 – Dec 2023 (2 yrs)</span>
+                </div>
+                <div class="job-company"><a href="https://bellabeat.com/" target="_blank">Bellabeat</a> (Y-Combinator backed) · Split, Croatia (remote)</div>
+                <ul>
+                    <li>Built ML models for next-cycle and symptom prediction: <a href="https://period-diary.com/scientific-article/period-ovulation-tracking-advanced-menstrual-tracking-algorithms/" target="_blank">article</a></li>
+                    <li>Owned data pipelines, monitoring, and data governance on GCP.</li>
+                    <li>Built user-facing health reports spanning data engineering to report design.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title">Computer Vision Engineer</span>
+                    <span class="job-date">Jul 2021 – Jan 2022 (6 mos)</span>
+                </div>
+                <div class="job-company"><a href="https://necogi.com/" target="_blank">Codeasy/Necogi</a> · Split, Croatia</div>
+                <ul>
+                    <li>Built aerial imagery analysis pipeline in PyTorch for object detection and classification.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title">PhD in Computational Quantum Physics (with honours)</span>
+                    <span class="job-date">Dec 2016 – Oct 2021 (4 yrs 10 mos)</span>
+                </div>
+                <div class="job-company">UPC Barcelona & University of Zagreb</div>
+                <ul>
+                    <li>Developed high-performance Quantum Monte Carlo simulation software in C++ for probabilistic sampling.</li>
+                    <li>Built Python pipelines for large-scale data analysis; published 10 Q1 papers (~300 citations).</li>
+                    <li><a href="https://arxiv.org/abs/2105.01439" target="_blank">PhD Thesis</a> · <a href="https://scholar.google.com/citations?user=LbRhAdIAAAAJ&hl=en" target="_blank">Google Scholar</a></li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title">Masters in Computational Physics – GPA 5.0/5.0</span>
+                    <span class="job-date">Sep 2014 – Sep 2016 (2 yrs)</span>
+                </div>
+                <div class="job-company">University of Split · Split, Croatia</div>
+                <ul>
+                    <li>Completed coursework in computational simulations; master's thesis on quantum Monte Carlo (Erasmus exchange at UPC Barcelona).</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Kaggle Competitions <span style="font-weight: normal; font-size: 0.85rem;">(Expert, rank 551/205,000)</span></h2>
+            <p class="kaggle-intro">Consistently top 1–3% in research-grade competitions spanning medical imaging, time series, EEG, and 3D data. <a href="https://www.kaggle.com/viktorcikojevic" target="_blank">Kaggle Profile</a></p>
+            <ul>
+                <li class="competition"><strong>RSNA 2024 – Lumbar Spine:</strong> Medical imaging. <strong>15th/1874 (top 1%)</strong></li>
+                <li class="competition"><strong>HMS – Harmful Brain Activity:</strong> EEG-based seizure detection. <strong>54th/2767 (top 2%)</strong></li>
+                <li class="competition"><strong>Vesuvius Challenge – Ink Detection:</strong> 3D X-ray scans of ancient scrolls. <strong>39th/1249 (top 3%)</strong></li>
+                <li class="competition"><strong>Detect Sleep States:</strong> Time-series accelerometer data. <strong>42nd/1877 (top 2%)</strong></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Publications</h2>
+            <div class="publication">
+                <span class="pub-label">Machine Learning:</span> P. Rauba*, <strong>V. Cikojević</strong>*, F. Bartolić*, S. Levang* et al., "Probabilistic Transformers for Joint Modeling of Global Weather Dynamics and Decision-Centric Variables," <em>arXiv:2601.03753</em>, 2026. (*equal contribution) <a href="https://arxiv.org/abs/2601.03753" target="_blank">arXiv</a>
+            </div>
+            <div class="publication">
+                <span class="pub-label">Physics:</span> 10 peer-reviewed publications in <em>Physical Review A/B/Research</em> and <em>New Journal of Physics</em> with ~300 citations. <a href="https://scholar.google.com/citations?user=LbRhAdIAAAAJ&hl=en" target="_blank">Google Scholar</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-row"><span class="skill-label">Languages:</span> Python, C/C++, SQL, Bash</div>
+                <div class="skill-row"><span class="skill-label">ML/Deep Learning:</span> PyTorch, TensorFlow, Keras, XGBoost, Transformers, Diffusion Models, CNNs, LSTMs, Computer Vision, NLP</div>
+                <div class="skill-row"><span class="skill-label">Cloud & Data:</span> GCP (BigQuery, Vertex AI, Cloud Functions, DataFlow), xarray, dask, Pandas, NumPy</div>
+                <div class="skill-row"><span class="skill-label">Tools:</span> Git, Docker, WandB, Hydra, Optuna</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Personal Interests</h2>
+            <p class="interests">Running/swimming, guitar, travelling.</p>
+        </section>
+    </div>
+</body>
+</html>
