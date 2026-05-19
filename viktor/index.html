@@ -208,7 +208,7 @@
 
         <section>
             <h2>About Me</h2>
-            <p class="about-text">ML Research Engineer with a track record of shipping production ML systems across diverse domains: generative weather models, medical imaging, EEG analysis, and health tech. Delivered end-to-end: from data pipelines and model training to user-facing products, across early-stage startups and applied research teams. Published researcher (<a href="https://arxiv.org/abs/2601.03753" target="_blank">GEM-2, arXiv:2601.03753</a>; 2 US patents; ~300 citations) with competitive ML validation (Kaggle Expert, top 551 of 205,000). PhD in computational physics; strong engineering foundation in Python, PyTorch, and GCP.</p>
+            <p class="about-text">Senior ML Research Engineer with end-to-end ownership across generative modelling, LLM systems, and production deployment. At Salient Predictions I designed and trained the diffusion and flow-matching architectures behind GEM-1, then co-led GEM-2 (<a href="https://arxiv.org/abs/2601.03753" target="_blank">arXiv:2601.03753</a>): a ~275M-param one-shot extension of diffusion models built on functional generative networks (FGN), cutting training cost ~100x and inference cost ~10x vs. multi-step diffusion ensembles (e.g., GenCast). Alongside, I've shipped a containerised audio-transcription SaaS on GCP/RunPod and have hands-on LLM fine-tuning, RAG, and multi-agent experience from Kaggle competitions and side projects. Published researcher (2 US AI patents, 10 Q1 physics papers, ~300 citations) and Kaggle Expert (top 551 of 205,000). PhD in computational physics, with deep PyTorch and distributed multi-GPU training experience.</p>
         </section>
 
         <section>
@@ -217,7 +217,7 @@
             <div class="job">
                 <div class="job-header">
                     <span class="job-title">Machine Learning Research Engineer</span>
-                    <span class="job-date">Dec 2023 – Mar 2026</span>
+                    <span class="job-date">Dec 2023 – Feb 2026</span>
                 </div>
                 <div class="job-company"><a href="https://www.salientpredictions.com/" target="_blank">Salient Predictions</a> · Split, Croatia (remote)</div>
                 <ul>
@@ -289,6 +289,16 @@
         </section>
 
         <section>
+            <h2>Selected Projects</h2>
+            <ul>
+                <li class="competition"><strong>transcribevoice.app &amp; transcribe-api-endpoint</strong> &mdash; production audio-transcription SaaS. Containerised WhisperX + NeMo (speaker diarisation) inference service with a multi-stage Docker image, deployed on RunPod serverless. Next.js frontend on Vercel, Firebase Auth/Firestore, Google Cloud Storage for audio + transcripts, Stripe Checkout for credits, GCP Cloud Functions for the upload/transcoding pipeline (yt-dlp + ffmpeg).</li>
+                <li class="competition"><strong>Kaggle LLM Science Exam</strong> &mdash; closed-domain QA over Wikipedia. Retrieval pipeline with <code>sentence-transformers</code> + FAISS for context selection; fine-tuned DeBERTa and 70B-scale LLaMA/Platypus with PEFT/LoRA and 8-bit quantisation (<code>bitsandbytes</code>); Pydantic-typed LLM outputs for synthetic data generation.</li>
+                <li class="competition"><strong>Kaggle LLM 20 Questions</strong> &mdash; multi-agent self-play. Questioner/answerer agent pair using LangChain (with Chroma vector store) and DSPy; ColBERT for retrieval; local inference via <code>llama-cpp-python</code> and Ollama; orchestrated self-play across category templates.</li>
+                <li class="competition"><strong>Numerai</strong> &mdash; classical ML in production. CatBoost/XGBoost regression on encrypted, era-structured financial features with multi-target training; era-aware hyperparameter sweeps and OOF evaluation; daily inference deployed on GCP Cloud Run behind an HTTP trigger.</li>
+            </ul>
+        </section>
+
+        <section>
             <h2>Publications</h2>
             <div class="publication">
                 <span class="pub-label">Machine Learning:</span> P. Rauba*, <strong>V. Cikojević</strong>*, F. Bartolić*, S. Levang* et al., "Probabilistic Transformers for Joint Modeling of Global Weather Dynamics and Decision-Centric Variables," <em>arXiv:2601.03753</em>, 2026. (*equal contribution) <a href="https://arxiv.org/abs/2601.03753" target="_blank">arXiv</a>
@@ -302,10 +312,12 @@
             <h2>Technical Skills</h2>
             <div class="skills-grid">
                 <div class="skill-row"><span class="skill-label">Languages:</span> Python, C/C++, SQL, Bash</div>
-                <div class="skill-row"><span class="skill-label">ML/Deep Learning:</span> PyTorch, TensorFlow, Keras, XGBoost, Transformers, Diffusion Models, CNNs, LSTMs, Computer Vision, NLP</div>
-                <div class="skill-row"><span class="skill-label">ML Domains:</span> Generative Models, Probabilistic Forecasting, Medical Imaging, Time Series, EEG/Signal Processing, Anomaly Detection, NLP/LLM Agents, RAG</div>
-                <div class="skill-row"><span class="skill-label">Cloud &amp; Data:</span> GCP (BigQuery, Vertex AI, Cloud Functions, DataFlow), xarray, dask, Pandas, NumPy</div>
-                <div class="skill-row"><span class="skill-label">Tools:</span> Git, Docker, WandB, Hydra, Optuna</div>
+                <div class="skill-row"><span class="skill-label">Generative Modelling:</span> Diffusion Models, Flow Matching, Functional Generative Networks (FGN), One-Shot Generation, Probabilistic Transformers, Conditional Sampling, Ensemble Calibration</div>
+                <div class="skill-row"><span class="skill-label">ML/Deep Learning:</span> PyTorch, Distributed Multi-GPU Training, Transformers, TensorFlow, Keras, CNNs, LSTMs, Computer Vision, NLP</div>
+                <div class="skill-row"><span class="skill-label">Classical ML:</span> XGBoost, CatBoost, scikit-learn, tree ensembles, feature engineering, hyperparameter optimisation, model evaluation</div>
+                <div class="skill-row"><span class="skill-label">LLM &amp; Agents:</span> LLM fine-tuning (PEFT/LoRA, 8-bit quantisation with bitsandbytes), RAG (sentence-transformers, FAISS, Chroma, ColBERT), LangChain, DSPy, Chainlit, multi-agent self-play, Pydantic-typed outputs, llama-cpp-python, Ollama</div>
+                <div class="skill-row"><span class="skill-label">Production / MLOps:</span> Docker (multi-stage builds), RunPod serverless, GCP (Cloud Run, Cloud Functions, Cloud Storage, BigQuery), Firebase (Auth, Firestore), Vercel/Next.js integration, Git/GitHub, GitLab</div>
+                <div class="skill-row"><span class="skill-label">Data Tooling:</span> xarray, dask, Pandas, NumPy, WandB, Hydra</div>
             </div>
         </section>
 
