@@ -221,11 +221,13 @@
                 </div>
                 <div class="job-company"><a href="https://www.salientpredictions.com/" target="_blank">Salient Predictions</a> · Split, Croatia (remote)</div>
                 <ul>
-                    <li>Co-authored GEM-2 (equal contribution, <a href="https://arxiv.org/abs/2601.03753" target="_blank">arXiv:2601.03753</a>): ~275M-param probabilistic transformer jointly modeling global atmospheric dynamics and decision-centric variables (daily Tmax/Tmin, precipitation, wind extremes); outperforms NOAA GEFS and IFS ENS 46 on CRPS skill at 1–40 day leads; state-of-the-art Relative Economic Value (REV); positive skill maintained to 126 days (S2S range).</li>
-                    <li>~100x training cost and ~10x inference cost reduction vs. SOTA diffusion-based ensembles (GenCast, FGN) via single-shot periodic shifted-window attention (no multi-step denoising).</li>
-                    <li>Developed generative AI weather model leading to <a href="https://www.salientpredictions.com/blog/webinar-recording---next-gen-forecasting-salients-new-model-and-what-it-means-for-you" target="_blank">GEM v1 release</a>.</li>
-                    <li>Co-invented 2 US patents on deep-learning weather forecasting (incl. GEM-2).</li>
-                    <li>Built v9 model: +20% skill score vs. previous generation.</li>
+                    <li>Co-led the technical design and trained the diffusion and flow-matching generative models powering <a href="https://www.salientpredictions.com/blog/webinar-recording---next-gen-forecasting-salients-new-model-and-what-it-means-for-you" target="_blank">GEM-1</a>: high-dimensional conditional sampling over global atmospheric state, with controllable, calibrated ensembles.</li>
+                    <li>Co-led the technical design of GEM-2 (equal contribution, <a href="https://arxiv.org/abs/2601.03753" target="_blank">arXiv:2601.03753</a>): a ~275M-param one-shot extension of diffusion models via functional generative networks (FGN), jointly modeling global atmospheric dynamics and decision-centric variables (daily Tmax/Tmin, precipitation, wind extremes); outperforms NOAA GEFS and IFS ENS 46 on CRPS skill at 1–40 day leads; state-of-the-art Relative Economic Value (REV); positive skill maintained to 126 days (S2S range).</li>
+                    <li>Co-author on <a href="https://www.linkedin.com/posts/salient-weather_salientgem-aiweather-generativeai-activity-7442208095973584896-NGvs" target="_blank">GEM-3</a>, Salient's latest production generative model (paper forthcoming).</li>
+                    <li>Cut training cost ~100x and inference cost ~10x vs. multi-step diffusion ensembles (e.g., GenCast) by collapsing iterative denoising into single-shot generation, while preserving ensemble calibration, fidelity, and diversity.</li>
+                    <li>Owned the full research-to-production pipeline: architecture design, training-data preparation, distributed multi-GPU training, evaluation systems (CRPS, REV, calibration, loss-pattern diagnostics), and deployment.</li>
+                    <li>Co-invented 2 US AI patents (incl. GEM-2).</li>
+                    <li>Delivered prior-generation production model: +20% skill score over previous baseline.</li>
                 </ul>
             </div>
 
@@ -238,7 +240,7 @@
                 <ul>
                     <li>Developed a multi-task transformer (encoder-decoder) for menstrual health prediction: period start MAE 2.3 days, period end MAE 0.68 days (~50% improvement over baseline), ovulation F1 0.922; <a href="https://period-diary.com/scientific-article/period-ovulation-tracking-advanced-menstrual-tracking-algorithms/" target="_blank">published article</a>.</li>
                     <li>Ingested multimodal inputs (cycle history, symptoms, mood, heart rate, skin temperature, respiratory rate) into a unified ML pipeline.</li>
-                    <li>Designed and maintained production data pipelines, monitoring, and governance on GCP; delivered end-to-end user-facing health reports from data engineering to report design.</li>
+                    <li>Shipped user-facing health features end-to-end, from data engineering and production pipelines, monitoring, and governance on GCP through to report design, collaborating with product and design to put model outputs in front of users.</li>
                 </ul>
             </div>
 
@@ -268,13 +270,23 @@
 
             <div class="job">
                 <div class="job-header">
-                    <span class="job-title">Masters in Computational Physics – GPA 5.0/5.0</span>
+                    <span class="job-title">Masters in Computational Physics – CGPA 5.0/5.0</span>
                     <span class="job-date">Sep 2014 – Sep 2016</span>
                 </div>
                 <div class="job-company">University of Split · Split, Croatia</div>
                 <ul>
                     <li>Completed coursework in computational simulations; master's thesis on quantum Monte Carlo (Erasmus exchange at UPC Barcelona).</li>
                 </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Publications</h2>
+            <div class="publication">
+                <span class="pub-label">Machine Learning:</span> P. Rauba*, <strong>V. Cikojević</strong>*, F. Bartolić*, S. Levang* et al., "Probabilistic Transformers for Joint Modeling of Global Weather Dynamics and Decision-Centric Variables," <em>arXiv:2601.03753</em>, 2026. (*equal contribution) <a href="https://arxiv.org/abs/2601.03753" target="_blank">arXiv</a>. GEM-3 paper forthcoming.
+            </div>
+            <div class="publication">
+                <span class="pub-label">Physics:</span> 10 peer-reviewed publications in <em>Physical Review A/B/Research</em> and <em>New Journal of Physics</em> with ~300 citations. <a href="https://scholar.google.com/citations?user=LbRhAdIAAAAJ&hl=en" target="_blank">Google Scholar</a>
             </div>
         </section>
 
@@ -296,16 +308,6 @@
                 <li class="competition"><strong>Kaggle LLM 20 Questions</strong> &mdash; multi-agent self-play. Questioner/answerer agent pair using LangChain (with Chroma vector store) and DSPy; ColBERT for retrieval; local inference via <code>llama-cpp-python</code> and Ollama; orchestrated self-play across category templates.</li>
                 <li class="competition"><strong>Numerai</strong> &mdash; classical ML in production. CatBoost/XGBoost regression on encrypted, era-structured financial features with multi-target training; era-aware hyperparameter sweeps and OOF evaluation; daily inference deployed on GCP Cloud Run behind an HTTP trigger.</li>
             </ul>
-        </section>
-
-        <section>
-            <h2>Publications</h2>
-            <div class="publication">
-                <span class="pub-label">Machine Learning:</span> P. Rauba*, <strong>V. Cikojević</strong>*, F. Bartolić*, S. Levang* et al., "Probabilistic Transformers for Joint Modeling of Global Weather Dynamics and Decision-Centric Variables," <em>arXiv:2601.03753</em>, 2026. (*equal contribution) <a href="https://arxiv.org/abs/2601.03753" target="_blank">arXiv</a>
-            </div>
-            <div class="publication">
-                <span class="pub-label">Physics:</span> 10 peer-reviewed publications in <em>Physical Review A/B/Research</em> and <em>New Journal of Physics</em> with ~300 citations. <a href="https://scholar.google.com/citations?user=LbRhAdIAAAAJ&hl=en" target="_blank">Google Scholar</a>
-            </div>
         </section>
 
         <section>
