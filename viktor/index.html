@@ -1,332 +1,333 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viktor Cikojević, PhD | ML Research Engineer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        :root {
-            --primary: #0E5484;
-            --dark: #1a1a1a;
-            --gray: #666;
-            --light: #f8f9fa;
-            --border: #e0e0e0;
-        }
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Viktor Cikojević, PhD — ML Research Engineer | Luna AI Lab</title>
+<meta name="description" content="Senior ML research engineer working on generative modelling, LLM systems and production ML. Co-author of GEM-2 (arXiv:2601.03753), two US AI patents, 10 Q1 physics papers, Kaggle Expert. PhD in computational physics. Split, Croatia.">
+<link rel="canonical" href="https://luna-ai-lab.com/viktor/">
+<meta name="theme-color" content="#08090b">
+<meta name="author" content="Viktor Cikojević">
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://luna-ai-lab.com/viktor/">
+<meta property="og:site_name" content="Luna AI Lab">
+<meta property="og:title" content="Viktor Cikojević, PhD — ML Research Engineer">
+<meta property="og:description" content="Generative modelling, LLM systems and production ML. Co-author of GEM-2, two US AI patents, Kaggle Expert, PhD in computational physics.">
+<meta property="og:image" content="https://luna-ai-lab.com/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://luna-ai-lab.com/assets/og.jpg">
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            line-height: 1.6;
-            color: var(--dark);
-            background: var(--light);
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            background: white;
-            min-height: 100vh;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 2px solid var(--primary);
-        }
-
-        h1 {
-            font-size: 2.2rem;
-            font-weight: 600;
-            margin-bottom: 5px;
-        }
-
-        .location {
-            color: var(--gray);
-            margin-bottom: 12px;
-        }
-
-        .links {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-        }
-
-        .links a {
-            color: var(--primary);
-            text-decoration: none;
-            font-size: 0.9rem;
-        }
-
-        .links a:hover {
-            text-decoration: underline;
-        }
-
-        section {
-            margin-bottom: 28px;
-        }
-
-        h2 {
-            font-size: 1.1rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: var(--dark);
-            border-bottom: 1px solid var(--border);
-            padding-bottom: 6px;
-            margin-bottom: 14px;
-        }
-
-        .about-text {
-            font-size: 0.95rem;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 6px;
-        }
-
-        .job {
-            margin-bottom: 20px;
-        }
-
-        .job-header {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            margin-bottom: 4px;
-        }
-
-        .job-title {
-            font-weight: 600;
-            font-size: 1rem;
-        }
-
-        .job-date {
-            color: var(--gray);
-            font-size: 0.9rem;
-        }
-
-        .job-company {
-            font-style: italic;
-            color: var(--gray);
-            margin-bottom: 8px;
-        }
-
-        .job-company a {
-            color: var(--primary);
-            text-decoration: none;
-        }
-
-        .job ul {
-            font-size: 0.95rem;
-        }
-
-        .kaggle-intro {
-            margin-bottom: 10px;
-            font-size: 0.95rem;
-        }
-
-        .competition {
-            margin-bottom: 4px;
-        }
-
-        .competition strong {
-            color: var(--dark);
-        }
-
-        .publication {
-            margin-bottom: 10px;
-            font-size: 0.95rem;
-        }
-
-        .pub-label {
-            font-weight: 600;
-        }
-
-        .skills-grid {
-            display: grid;
-            gap: 8px;
-            font-size: 0.95rem;
-        }
-
-        .skill-row {
-            display: flex;
-            gap: 8px;
-        }
-
-        .skill-label {
-            font-weight: 600;
-            min-width: 140px;
-        }
-
-        a {
-            color: var(--primary);
-        }
-
-        .interests {
-            color: var(--gray);
-        }
-
-        @media (max-width: 600px) {
-            .job-header {
-                flex-direction: column;
-            }
-            .skill-row {
-                flex-direction: column;
-                gap: 2px;
-            }
-            .skill-label {
-                min-width: auto;
-            }
-        }
-    </style>
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=Instrument+Serif:ital@0;1&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="/styles.css">
+<script>document.documentElement.classList.remove('no-js');</script>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Viktor Cikojević, PhD</h1>
-            <div class="location">Split, Croatia</div>
-            <div class="links">
-                <a href="mailto:cikojevic.viktor@gmail.com"><i class="fas fa-envelope"></i> cikojevic.viktor@gmail.com</a>
-                <a href="https://linkedin.com/in/viktor-cikojevic-9546161a2" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="https://github.com/viktorcikojevic" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                <a href="https://www.kaggle.com/viktorcikojevic" target="_blank"><i class="fas fa-chart-bar"></i> Kaggle</a>
-                <a href="https://scholar.google.com/citations?user=LbRhAdIAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
-            </div>
-        </header>
 
-        <section>
-            <h2>About Me</h2>
-            <p class="about-text">Senior ML Research Engineer with end-to-end ownership across generative modelling, LLM systems, and production deployment. At Salient Predictions I designed and trained the diffusion and flow-matching architectures behind GEM-1, then co-led GEM-2 (<a href="https://arxiv.org/abs/2601.03753" target="_blank">arXiv:2601.03753</a>): a ~275M-param one-shot extension of diffusion models built on functional generative networks (FGN), cutting training cost ~100x and inference cost ~10x vs. multi-step diffusion ensembles (e.g., GenCast). Alongside, I've shipped a containerised audio-transcription SaaS on GCP/RunPod and have hands-on LLM fine-tuning, RAG, and multi-agent experience from Kaggle competitions and side projects. Published researcher (2 US AI patents, 10 Q1 physics papers, ~300 citations) and Kaggle Expert (top 551 of 205,000). PhD in computational physics, with deep PyTorch and distributed multi-GPU training experience.</p>
-        </section>
+<a class="skip" href="#main">Skip to content</a>
 
-        <section>
-            <h2>Experience &amp; Education</h2>
+<header class="nav no-print">
+  <div class="wrap nav__inner">
+    <a class="wordmark" href="/">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+        <circle cx="12" cy="12" r="9"/>
+        <path d="M15.5 4.2a9 9 0 0 0 0 15.6"/>
+      </svg>
+      Luna AI Lab
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav__links">
+        <li data-optional><a href="/#practice">Practice</a></li>
+        <li data-optional><a href="/#work">Work</a></li>
+        <li><a href="/#contact">Contact</a></li>
+        <li><a href="#" id="print-cv">Print</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-            <div class="job">
-                <div class="job-header">
-                    <span class="job-title">Machine Learning Research Engineer</span>
-                    <span class="job-date">Dec 2023 – Feb 2026</span>
-                </div>
-                <div class="job-company"><a href="https://www.salientpredictions.com/" target="_blank">Salient Predictions</a> · Split, Croatia (remote)</div>
-                <ul>
-                    <li>Co-led the technical design and trained the diffusion and flow-matching generative models powering <a href="https://www.salientpredictions.com/blog/webinar-recording---next-gen-forecasting-salients-new-model-and-what-it-means-for-you" target="_blank">GEM-1</a>: high-dimensional conditional sampling over global atmospheric state, with controllable, calibrated ensembles.</li>
-                    <li>Co-led the technical design of GEM-2 (equal contribution, <a href="https://arxiv.org/abs/2601.03753" target="_blank">arXiv:2601.03753</a>): a ~275M-param one-shot extension of diffusion models via functional generative networks (FGN), jointly modeling global atmospheric dynamics and decision-centric variables (daily Tmax/Tmin, precipitation, wind extremes); outperforms NOAA GEFS and IFS ENS 46 on CRPS skill at 1–40 day leads; state-of-the-art Relative Economic Value (REV); positive skill maintained to 126 days (S2S range).</li>
-                    <li>Co-author on <a href="https://www.linkedin.com/posts/salient-weather_salientgem-aiweather-generativeai-activity-7442208095973584896-NGvs" target="_blank">GEM-3</a>, Salient's latest production generative model (paper forthcoming).</li>
-                    <li>Cut training cost ~100x and inference cost ~10x vs. multi-step diffusion ensembles (e.g., GenCast) by collapsing iterative denoising into single-shot generation, while preserving ensemble calibration, fidelity, and diversity.</li>
-                    <li>Owned the full research-to-production pipeline: architecture design, training-data preparation, distributed multi-GPU training, evaluation systems (CRPS, REV, calibration, loss-pattern diagnostics), and deployment.</li>
-                    <li>Co-invented 2 US AI patents (incl. GEM-2).</li>
-                    <li>Delivered prior-generation production model: +20% skill score over previous baseline.</li>
-                </ul>
-            </div>
+<main id="main">
 
-            <div class="job">
-                <div class="job-header">
-                    <span class="job-title">Data Scientist</span>
-                    <span class="job-date">Jan 2022 – Dec 2023</span>
-                </div>
-                <div class="job-company"><a href="https://bellabeat.com/" target="_blank">Bellabeat (Y-Combinator backed startup)</a> · Split, Croatia (remote)</div>
-                <ul>
-                    <li>Developed a multi-task transformer (encoder-decoder) for menstrual health prediction: period start MAE 2.3 days, period end MAE 0.68 days (~50% improvement over baseline), ovulation F1 0.922; <a href="https://period-diary.com/scientific-article/period-ovulation-tracking-advanced-menstrual-tracking-algorithms/" target="_blank">published article</a>.</li>
-                    <li>Ingested multimodal inputs (cycle history, symptoms, mood, heart rate, skin temperature, respiratory rate) into a unified ML pipeline.</li>
-                    <li>Shipped user-facing health features end-to-end, from data engineering and production pipelines, monitoring, and governance on GCP through to report design, collaborating with product and design to put model outputs in front of users.</li>
-                </ul>
-            </div>
+  <!-- ========================================================== HEADER -->
+  <section class="wrap cv-header">
+    <h1>Viktor Cikojević, PhD</h1>
+    <p class="cv-header__meta">ML Research Engineer &middot; Split, Croatia &middot; Luna AI Lab d.o.o.</p>
 
-            <div class="job">
-                <div class="job-header">
-                    <span class="job-title">Computer Vision Engineer</span>
-                    <span class="job-date">Jul 2021 – Jan 2022</span>
-                </div>
-                <div class="job-company"><a href="https://necogi.com/" target="_blank">Codeasy/Necogi</a> · Split, Croatia</div>
-                <ul>
-                    <li>Built aerial imagery analysis pipeline in PyTorch for object detection and classification.</li>
-                </ul>
-            </div>
+    <ul class="elsewhere">
+      <li><a href="mailto:cikojevic.viktor@gmail.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        cikojevic.viktor@gmail.com</a></li>
+      <li><a href="https://linkedin.com/in/viktor-cikojevic-9546161a2" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.6c0-1.34-.03-3.06-1.9-3.06-1.9 0-2.2 1.45-2.2 2.96V21h-4z"/></svg>
+        LinkedIn</a></li>
+      <li><a href="https://github.com/viktorcikojevic" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+        GitHub</a></li>
+      <li><a href="https://www.kaggle.com/viktorcikojevic" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 20V4M4 14l8-7M9 11l7 9"/></svg>
+        Kaggle</a></li>
+      <li><a href="https://scholar.google.com/citations?user=LbRhAdIAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 4 2 9l10 5 10-5-10-5z"/><path d="M6 11.5V16c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/></svg>
+        Google Scholar</a></li>
+    </ul>
+  </section>
 
-            <div class="job">
-                <div class="job-header">
-                    <span class="job-title">PhD in Computational Quantum Physics (with honours)</span>
-                    <span class="job-date">Dec 2016 – Oct 2021</span>
-                </div>
-                <div class="job-company">UPC Barcelona &amp; University of Zagreb</div>
-                <ul>
-                    <li>Developed high-performance Quantum Monte Carlo simulation software in C++ for probabilistic sampling.</li>
-                    <li>Built Python pipelines for large-scale data analysis; published 10 Q1 papers (~300 citations).</li>
-                    <li><a href="https://arxiv.org/abs/2105.01439" target="_blank">PhD Thesis</a> · <a href="https://scholar.google.com/citations?user=LbRhAdIAAAAJ&hl=en" target="_blank">Google Scholar</a></li>
-                </ul>
-            </div>
-
-            <div class="job">
-                <div class="job-header">
-                    <span class="job-title">Masters in Computational Physics – CGPA 5.0/5.0</span>
-                    <span class="job-date">Sep 2014 – Sep 2016</span>
-                </div>
-                <div class="job-company">University of Split · Split, Croatia</div>
-                <ul>
-                    <li>Completed coursework in computational simulations; master's thesis on quantum Monte Carlo (Erasmus exchange at UPC Barcelona).</li>
-                </ul>
-            </div>
-        </section>
-
-        <section>
-            <h2>Publications</h2>
-            <div class="publication">
-                <span class="pub-label">Machine Learning:</span> P. Rauba*, <strong>V. Cikojević</strong>*, F. Bartolić*, S. Levang* et al., "Probabilistic Transformers for Joint Modeling of Global Weather Dynamics and Decision-Centric Variables," <em>arXiv:2601.03753</em>, 2026. (*equal contribution) <a href="https://arxiv.org/abs/2601.03753" target="_blank">arXiv</a>. GEM-3 paper forthcoming.
-            </div>
-            <div class="publication">
-                <span class="pub-label">Physics:</span> 10 peer-reviewed publications in <em>Physical Review A/B/Research</em> and <em>New Journal of Physics</em> with ~300 citations. <a href="https://scholar.google.com/citations?user=LbRhAdIAAAAJ&hl=en" target="_blank">Google Scholar</a>
-            </div>
-        </section>
-
-        <section>
-            <h2>Kaggle Competitions <span style="font-weight: normal; font-size: 0.85rem;">(Expert, rank 551/205,000 &middot; <a href="https://www.kaggle.com/viktorcikojevic" target="_blank">Profile</a>)</span></h2>
-            <ul>
-                <li class="competition"><strong><a href="https://www.kaggle.com/competitions/rsna-2024-lumbar-spine-degenerative-classification" target="_blank">RSNA 2024 – Lumbar Spine Degenerative Classification</a>:</strong> Medical imaging (MRI). <strong>15th/1,874 (top 1%)</strong> &mdash; <a href="https://www.kaggle.com/competitions/rsna-2024-lumbar-spine-degenerative-classification/writeups/derpmaxxing-15th-place-solution" target="_blank">solution writeup</a></li>
-                <li class="competition"><strong><a href="https://www.kaggle.com/competitions/hms-harmful-brain-activity-classification" target="_blank">HMS – Harmful Brain Activity Classification</a>:</strong> EEG-based seizure detection. <strong>54th/2,767 (top 2%)</strong></li>
-                <li class="competition"><strong><a href="https://www.kaggle.com/competitions/child-mind-institute-detect-sleep-states" target="_blank">Detect Sleep States</a>:</strong> Time-series accelerometer data. <strong>42nd/1,877 (top 2%)</strong></li>
-                <li class="competition"><strong>Further results:</strong> Vesuvius Challenge (computer vision / 3D segmentation, 39th/1,249, top 3%), LLM 20 Questions (LLM agents, 87th/832), ISIC 2024 (computer vision / medical imaging, 243rd/2,739).</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Selected Projects</h2>
-            <ul>
-                <li class="competition"><strong>transcribevoice.app &amp; transcribe-api-endpoint</strong> &mdash; production audio-transcription SaaS. Containerised WhisperX + NeMo (speaker diarisation) inference service with a multi-stage Docker image, deployed on RunPod serverless. Next.js frontend on Vercel, Firebase Auth/Firestore, Google Cloud Storage for audio + transcripts, Stripe Checkout for credits, GCP Cloud Functions for the upload/transcoding pipeline (yt-dlp + ffmpeg).</li>
-                <li class="competition"><strong>Kaggle LLM Science Exam</strong> &mdash; closed-domain QA over Wikipedia. Retrieval pipeline with <code>sentence-transformers</code> + FAISS for context selection; fine-tuned DeBERTa and 70B-scale LLaMA/Platypus with PEFT/LoRA and 8-bit quantisation (<code>bitsandbytes</code>); Pydantic-typed LLM outputs for synthetic data generation.</li>
-                <li class="competition"><strong>Kaggle LLM 20 Questions</strong> &mdash; multi-agent self-play. Questioner/answerer agent pair using LangChain (with Chroma vector store) and DSPy; ColBERT for retrieval; local inference via <code>llama-cpp-python</code> and Ollama; orchestrated self-play across category templates.</li>
-                <li class="competition"><strong>Numerai</strong> &mdash; classical ML in production. CatBoost/XGBoost regression on encrypted, era-structured financial features with multi-target training; era-aware hyperparameter sweeps and OOF evaluation; daily inference deployed on GCP Cloud Run behind an HTTP trigger.</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-row"><span class="skill-label">Languages:</span> Python, C/C++, SQL, Bash</div>
-                <div class="skill-row"><span class="skill-label">Generative Modelling:</span> Diffusion Models, Flow Matching, Functional Generative Networks (FGN), One-Shot Generation, Probabilistic Transformers, Conditional Sampling, Ensemble Calibration</div>
-                <div class="skill-row"><span class="skill-label">ML/Deep Learning:</span> PyTorch, Distributed Multi-GPU Training, Transformers, TensorFlow, Keras, CNNs, LSTMs, Computer Vision, NLP</div>
-                <div class="skill-row"><span class="skill-label">Classical ML:</span> XGBoost, CatBoost, scikit-learn, tree ensembles, feature engineering, hyperparameter optimisation, model evaluation</div>
-                <div class="skill-row"><span class="skill-label">LLM &amp; Agents:</span> LLM fine-tuning (PEFT/LoRA, 8-bit quantisation with bitsandbytes), RAG (sentence-transformers, FAISS, Chroma, ColBERT), LangChain, DSPy, Chainlit, multi-agent self-play, Pydantic-typed outputs, llama-cpp-python, Ollama</div>
-                <div class="skill-row"><span class="skill-label">Production / MLOps:</span> Docker (multi-stage builds), RunPod serverless, GCP (Cloud Run, Cloud Functions, Cloud Storage, BigQuery), Firebase (Auth, Firestore), Vercel/Next.js integration, Git/GitHub, GitLab</div>
-                <div class="skill-row"><span class="skill-label">Data Tooling:</span> xarray, dask, Pandas, NumPy, WandB, Hydra</div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Personal Interests</h2>
-            <p class="interests">Running/swimming, guitar, travelling.</p>
-        </section>
+  <!-- =========================================================== ABOUT -->
+  <section class="section" id="about">
+    <div class="wrap split">
+      <div class="rail">
+        <span class="rail__index">01</span>
+        <h2 class="rail__title">About</h2>
+      </div>
+      <div>
+        <p class="prose">
+          Senior ML research engineer with end-to-end ownership across generative modelling, LLM
+          systems and production deployment. At Salient Predictions I designed and trained the
+          diffusion and flow-matching architectures behind GEM-1, then co-led GEM-2
+          (<a href="https://arxiv.org/abs/2601.03753" target="_blank" rel="noopener">arXiv:2601.03753</a>):
+          a ~275M-parameter one-shot extension of diffusion models built on functional generative
+          networks (FGN), cutting training cost ~100&times; and inference cost ~10&times; against
+          multi-step diffusion ensembles such as GenCast. Alongside that I have shipped a
+          containerised audio-transcription SaaS on GCP and RunPod, and have hands-on LLM
+          fine-tuning, RAG and multi-agent experience from Kaggle competitions and side projects.
+          Published researcher — 2 US AI patents, 10 Q1 physics papers, ~300 citations — and Kaggle
+          Expert, top 551 of 205,000. PhD in computational physics, with deep PyTorch and
+          distributed multi-GPU training experience.
+        </p>
+      </div>
     </div>
+  </section>
+
+  <!-- ====================================================== EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="wrap split">
+      <div class="rail">
+        <span class="rail__index">02</span>
+        <h2 class="rail__title">Experience &amp; education</h2>
+      </div>
+
+      <div>
+        <ol class="timeline">
+
+          <li>
+            <div class="role__head">
+              <h3 class="role__title">Machine Learning Research Engineer</h3>
+              <span class="role__date">Dec 2023 – Feb 2026</span>
+            </div>
+            <p class="role__org"><a href="https://www.salientpredictions.com/" target="_blank" rel="noopener">Salient Predictions</a> &middot; Split, Croatia (remote)</p>
+            <ul class="bullets">
+              <li>Co-led the technical design and trained the diffusion and flow-matching generative models powering <a href="https://www.salientpredictions.com/blog/webinar-recording---next-gen-forecasting-salients-new-model-and-what-it-means-for-you" target="_blank" rel="noopener">GEM-1</a>: high-dimensional conditional sampling over global atmospheric state, with controllable, calibrated ensembles.</li>
+              <li>Co-led the technical design and training of <strong>GEM-2</strong> (equal contribution, <a href="https://arxiv.org/abs/2601.03753" target="_blank" rel="noopener">arXiv:2601.03753</a>): a ~275M-parameter one-shot extension of diffusion models via functional generative networks (FGN), jointly modelling global atmospheric dynamics and decision-centric variables (daily Tmax/Tmin, precipitation, wind extremes); outperforms NOAA GEFS and IFS ENS 46 on CRPS skill at 1–40 day leads; state-of-the-art relative economic value (REV); positive skill maintained to 126 days (S2S range).</li>
+              <li>Co-author on <a href="https://www.linkedin.com/posts/salient-weather_salientgem-aiweather-generativeai-activity-7442208095973584896-NGvs" target="_blank" rel="noopener">GEM-3</a>, Salient's latest production generative model (paper forthcoming).</li>
+              <li>Cut training cost ~100&times; and inference cost ~10&times; versus multi-step diffusion ensembles (e.g. GenCast) by collapsing iterative denoising into single-shot generation, while preserving ensemble calibration, fidelity and diversity.</li>
+              <li>Owned the full research-to-production pipeline: architecture design, training-data preparation, distributed multi-GPU training, evaluation systems (CRPS, REV, calibration, loss-pattern diagnostics), and deployment.</li>
+              <li>Co-invented 2 US AI patents, including GEM-2.</li>
+              <li>Delivered the prior-generation production model: +20% skill score over the previous baseline.</li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="role__head">
+              <h3 class="role__title">Data Scientist</h3>
+              <span class="role__date">Jan 2022 – Dec 2023</span>
+            </div>
+            <p class="role__org"><a href="https://bellabeat.com/" target="_blank" rel="noopener">Bellabeat</a> (Y Combinator backed) &middot; Split, Croatia (remote)</p>
+            <ul class="bullets">
+              <li>Developed a multi-task transformer (encoder-decoder) for menstrual health prediction: period start MAE 2.3 days, period end MAE 0.68 days (~50% improvement over baseline), ovulation F1 0.922; <a href="https://period-diary.com/scientific-article/period-ovulation-tracking-advanced-menstrual-tracking-algorithms/" target="_blank" rel="noopener">published article</a>.</li>
+              <li>Ingested multimodal inputs (cycle history, symptoms, mood, heart rate, skin temperature, respiratory rate) into a unified ML pipeline.</li>
+              <li>Shipped user-facing health features end to end, from data engineering and production pipelines, monitoring and governance on GCP through to report design, working with product and design to put model outputs in front of users.</li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="role__head">
+              <h3 class="role__title">Computer Vision Engineer</h3>
+              <span class="role__date">Jul 2021 – Jan 2022</span>
+            </div>
+            <p class="role__org"><a href="https://necogi.com/" target="_blank" rel="noopener">Codeasy / Necogi</a> &middot; Split, Croatia</p>
+            <ul class="bullets">
+              <li>Built an aerial imagery analysis pipeline in PyTorch for object detection and classification.</li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="role__head">
+              <h3 class="role__title">PhD in Computational Quantum Physics (with honours)</h3>
+              <span class="role__date">Dec 2016 – Oct 2021</span>
+            </div>
+            <p class="role__org">UPC Barcelona &amp; University of Zagreb</p>
+            <ul class="bullets">
+              <li>Developed high-performance Quantum Monte Carlo simulation software in C++ for probabilistic sampling.</li>
+              <li>Built Python pipelines for large-scale data analysis; published 10 Q1 papers with ~300 citations.</li>
+              <li><a href="https://arxiv.org/abs/2105.01439" target="_blank" rel="noopener">PhD thesis</a> &middot; <a href="https://scholar.google.com/citations?user=LbRhAdIAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="role__head">
+              <h3 class="role__title">MSc in Computational Physics — CGPA 5.0/5.0</h3>
+              <span class="role__date">Sep 2014 – Sep 2016</span>
+            </div>
+            <p class="role__org">University of Split &middot; Split, Croatia</p>
+            <ul class="bullets">
+              <li>Coursework in computational simulations; master's thesis on quantum Monte Carlo, with an Erasmus exchange at UPC Barcelona.</li>
+            </ul>
+          </li>
+
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================================================== PUBLICATIONS -->
+  <section class="section" id="publications">
+    <div class="wrap split">
+      <div class="rail">
+        <span class="rail__index">03</span>
+        <h2 class="rail__title">Publications</h2>
+      </div>
+      <div>
+        <p class="prose" style="margin-bottom:1.1rem">
+          <strong>Machine learning.</strong> P. Rauba*, <strong>V. Cikojević</strong>*, F. Bartolić*,
+          S. Levang* et al., “Probabilistic Transformers for Joint Modeling of Global Weather
+          Dynamics and Decision-Centric Variables,” <em>arXiv:2601.03753</em>, 2026
+          (*equal contribution).
+          <a href="https://arxiv.org/abs/2601.03753" target="_blank" rel="noopener">Read on arXiv</a>.
+          GEM-3 paper forthcoming.
+        </p>
+        <p class="prose">
+          <strong>Physics.</strong> 10 peer-reviewed publications in <em>Physical Review A/B/Research</em>
+          and <em>New Journal of Physics</em>, ~300 citations.
+          <a href="https://scholar.google.com/citations?user=LbRhAdIAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================== KAGGLE -->
+  <section class="section" id="kaggle">
+    <div class="wrap split">
+      <div class="rail">
+        <span class="rail__index">04</span>
+        <h2 class="rail__title">Kaggle</h2>
+        <p class="rail__note">Expert &middot; top rank 551 of 205,000 &middot; <a class="link" href="https://www.kaggle.com/viktorcikojevic" target="_blank" rel="noopener">profile</a></p>
+      </div>
+      <div>
+        <ul class="bullets" style="margin-top:0">
+          <li><strong><a href="https://www.kaggle.com/competitions/rsna-2024-lumbar-spine-degenerative-classification" target="_blank" rel="noopener">RSNA 2024 — Lumbar Spine Degenerative Classification</a>.</strong> Medical imaging (MRI). <strong>15th of 1,874, top 1%</strong> — <a href="https://www.kaggle.com/competitions/rsna-2024-lumbar-spine-degenerative-classification/writeups/derpmaxxing-15th-place-solution" target="_blank" rel="noopener">solution writeup</a>.</li>
+          <li><strong><a href="https://www.kaggle.com/competitions/hms-harmful-brain-activity-classification" target="_blank" rel="noopener">HMS — Harmful Brain Activity Classification</a>.</strong> EEG-based seizure detection. <strong>54th of 2,767, top 2%</strong>.</li>
+          <li><strong><a href="https://www.kaggle.com/competitions/child-mind-institute-detect-sleep-states" target="_blank" rel="noopener">Detect Sleep States</a>.</strong> Time-series accelerometer data. <strong>42nd of 1,877, top 2%</strong>.</li>
+          <li><strong>Further results.</strong> Vesuvius Challenge (computer vision / 3D segmentation, 39th of 1,249, top 3%), LLM 20 Questions (LLM agents, 87th of 832), ISIC 2024 (computer vision / medical imaging, 243rd of 2,739).</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================== PROJECTS -->
+  <section class="section" id="projects">
+    <div class="wrap split">
+      <div class="rail">
+        <span class="rail__index">05</span>
+        <h2 class="rail__title">Selected projects</h2>
+      </div>
+      <div>
+        <ul class="bullets" style="margin-top:0">
+          <li><strong><a href="https://transcribevoice.app" target="_blank" rel="noopener">transcribevoice.app</a> &amp; transcribe-api-endpoint</strong> — production audio-transcription SaaS. Containerised WhisperX + NeMo (speaker diarisation) inference service with a multi-stage Docker image, deployed on RunPod serverless. Next.js frontend on Vercel, Firebase Auth/Firestore, Google Cloud Storage for audio and transcripts, Stripe Checkout for credits, GCP Cloud Functions for the upload and transcoding pipeline (yt-dlp + ffmpeg).</li>
+          <li><strong>Kaggle LLM Science Exam</strong> — closed-domain QA over Wikipedia. Retrieval pipeline with <code>sentence-transformers</code> + FAISS for context selection; fine-tuned DeBERTa and 70B-scale LLaMA/Platypus with PEFT/LoRA and 8-bit quantisation (<code>bitsandbytes</code>); Pydantic-typed LLM outputs for synthetic data generation.</li>
+          <li><strong>Kaggle LLM 20 Questions</strong> — multi-agent self-play. Questioner/answerer agent pair using LangChain with a Chroma vector store, and DSPy; ColBERT for retrieval; local inference via <code>llama-cpp-python</code> and Ollama; self-play orchestrated across category templates.</li>
+          <li><strong>Numerai</strong> — classical ML in production. CatBoost/XGBoost regression on encrypted, era-structured financial features with multi-target training; era-aware hyperparameter sweeps and OOF evaluation; daily inference deployed on GCP Cloud Run behind an HTTP trigger.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================== SKILLS -->
+  <section class="section" id="skills">
+    <div class="wrap split">
+      <div class="rail">
+        <span class="rail__index">06</span>
+        <h2 class="rail__title">Technical skills</h2>
+      </div>
+      <div>
+        <dl class="skills">
+          <div><dt>Languages</dt><dd>Python, C/C++, SQL, Bash</dd></div>
+          <div><dt>Generative modelling</dt><dd>Diffusion models, flow matching, functional generative networks (FGN), one-shot generation, probabilistic transformers, conditional sampling, ensemble calibration</dd></div>
+          <div><dt>ML / deep learning</dt><dd>PyTorch, distributed multi-GPU training, transformers, TensorFlow, Keras, CNNs, LSTMs, computer vision, NLP</dd></div>
+          <div><dt>Classical ML</dt><dd>XGBoost, CatBoost, scikit-learn, tree ensembles, feature engineering, hyperparameter optimisation, model evaluation</dd></div>
+          <div><dt>LLM &amp; agents</dt><dd>LLM fine-tuning (PEFT/LoRA, 8-bit quantisation with bitsandbytes), RAG (sentence-transformers, FAISS, Chroma, ColBERT), LangChain, DSPy, Chainlit, multi-agent self-play, Pydantic-typed outputs, llama-cpp-python, Ollama</dd></div>
+          <div><dt>Production / MLOps</dt><dd>Docker (multi-stage builds), RunPod serverless, GCP (Cloud Run, Cloud Functions, Cloud Storage, BigQuery), Firebase (Auth, Firestore), Vercel/Next.js integration, Git/GitHub, GitLab</dd></div>
+          <div><dt>Data tooling</dt><dd>xarray, dask, Pandas, NumPy, WandB, Hydra</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================= INTERESTS -->
+  <section class="section" id="interests">
+    <div class="wrap split">
+      <div class="rail">
+        <span class="rail__index">07</span>
+        <h2 class="rail__title">Outside work</h2>
+      </div>
+      <div>
+        <p class="prose">Running and swimming, guitar, travelling.</p>
+        <p class="prose" style="margin-top:1.5rem">
+          For consulting and project work, see <a href="/">Luna AI Lab</a> or email
+          <a href="mailto:viktor.cikojevic@luna-ai-lab.com">viktor.cikojevic@luna-ai-lab.com</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer no-print">
+  <div class="wrap footer__inner">
+    <span>Luna AI Lab d.o.o. — Split, Croatia</span>
+    <span><a href="/">Studio</a> · <a href="mailto:viktor.cikojevic@luna-ai-lab.com">Email</a> · <span id="year">2026</span></span>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Viktor Cikojević",
+  "honorificSuffix": "PhD",
+  "jobTitle": "ML Research Engineer",
+  "url": "https://luna-ai-lab.com/viktor/",
+  "email": "cikojevic.viktor@gmail.com",
+  "worksFor": { "@type": "Organization", "name": "Luna AI Lab", "url": "https://luna-ai-lab.com/" },
+  "address": { "@type": "PostalAddress", "addressLocality": "Split", "addressCountry": "HR" },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Universitat Politècnica de Catalunya" },
+    { "@type": "CollegeOrUniversity", "name": "University of Zagreb" },
+    { "@type": "CollegeOrUniversity", "name": "University of Split" }
+  ],
+  "knowsAbout": [
+    "Diffusion models", "Flow matching", "Functional generative networks",
+    "Probabilistic forecasting", "Large language models", "Retrieval-augmented generation",
+    "Distributed training", "MLOps"
+  ],
+  "sameAs": [
+    "https://github.com/viktorcikojevic",
+    "https://www.kaggle.com/viktorcikojevic",
+    "https://linkedin.com/in/viktor-cikojevic-9546161a2",
+    "https://scholar.google.com/citations?user=LbRhAdIAAAAJ&hl=en",
+    "https://arxiv.org/abs/2601.03753"
+  ]
+}
+</script>
+
+<script src="/main.js" defer></script>
+<script>
+  document.getElementById('print-cv').addEventListener('click', function (e) {
+    e.preventDefault();
+    window.print();
+  });
+</script>
 </body>
 </html>

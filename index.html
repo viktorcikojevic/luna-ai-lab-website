@@ -1,10 +1,438 @@
-<html>
-  <head>
-    <title>Luna AI Lab</title>
-  </head>
-  <body>
-    <h1>Luna AI Lab</h1>
-    <p>Building deep learning models.</p>
-    <p>Contact at: <a href="mailto:viktor.cikojevic@luna-ai-lab.com">viktor.cikojevic@luna-ai-lab.com</a></p>
-  </body>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Luna AI Lab — Generative and probabilistic ML, built to run in production</title>
+<meta name="description" content="Luna AI Lab is a one-person research studio in Split, Croatia. Diffusion, flow matching and functional generative networks; LLM and agent systems; ML that ships. Run by Viktor Cikojević, PhD — co-author of GEM-2 (arXiv:2601.03753) and two US AI patents.">
+<link rel="canonical" href="https://luna-ai-lab.com/">
+<meta name="theme-color" content="#08090b">
+<meta name="author" content="Viktor Cikojević">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://luna-ai-lab.com/">
+<meta property="og:site_name" content="Luna AI Lab">
+<meta property="og:title" content="Luna AI Lab — Generative and probabilistic ML, built to run in production">
+<meta property="og:description" content="A one-person research studio in Split, Croatia. Diffusion, flow matching and functional generative networks; LLM and agent systems; ML that ships.">
+<meta property="og:image" content="https://luna-ai-lab.com/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Luna AI Lab — Generative and probabilistic ML, built to run in production">
+<meta name="twitter:description" content="A one-person research studio in Split, Croatia. Diffusion, flow matching and functional generative networks; LLM and agent systems; ML that ships.">
+<meta name="twitter:image" content="https://luna-ai-lab.com/assets/og.jpg">
+
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=Instrument+Serif:ital@0;1&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="/styles.css">
+<script>document.documentElement.classList.remove('no-js');</script>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a class="wordmark" href="/">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+        <circle cx="12" cy="12" r="9"/>
+        <path d="M15.5 4.2a9 9 0 0 0 0 15.6"/>
+      </svg>
+      Luna AI Lab
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav__links">
+        <li data-optional><a href="#practice">Practice</a></li>
+        <li data-optional><a href="#work">Work</a></li>
+        <li data-optional><a href="#approach">Approach</a></li>
+        <li><a href="/viktor/">CV</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============================================================ HERO -->
+  <section class="hero">
+    <canvas id="ensemble" aria-hidden="true"></canvas>
+    <div class="wrap hero__inner">
+      <p class="hero__eyebrow">Split, Croatia — available for new work</p>
+
+      <h1 class="display">Generative models that <em>reach production.</em></h1>
+
+      <p class="lede hero__lede">
+        Luna AI Lab is a one-person research studio. I am Viktor Cikojević — PhD in
+        computational physics, ML research engineer. I design and train generative and
+        probabilistic models, then take them the rest of the way: distributed training,
+        evaluation you can defend, and a system that actually runs.
+      </p>
+
+      <ul class="hero__proof">
+        <li>arXiv:2601.03753</li>
+        <li>2 US AI patents</li>
+        <li>Kaggle Expert, top 1%</li>
+        <li>10 Q1 papers, ~300 citations</li>
+      </ul>
+
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="mailto:viktor.cikojevic@luna-ai-lab.com?subject=Project%20enquiry">
+          Start a conversation
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <path d="M2 8h12M9 3l5 5-5 5"/>
+          </svg>
+        </a>
+        <a class="btn btn--ghost" href="/viktor/">Read the full CV</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================== STATS -->
+  <section class="section" aria-label="Selected results" style="border-top:0">
+    <div class="wrap">
+      <div class="stats" data-reveal>
+        <div class="stat">
+          <div class="stat__value">~275M</div>
+          <p class="stat__label">Parameters in GEM-2, generating a full global ensemble in one shot</p>
+        </div>
+        <div class="stat">
+          <div class="stat__value">~100&times;</div>
+          <p class="stat__label">Lower training cost than multi-step diffusion ensembles</p>
+        </div>
+        <div class="stat">
+          <div class="stat__value">~10&times;</div>
+          <p class="stat__label">Lower inference cost, with calibration and diversity preserved</p>
+        </div>
+        <div class="stat stat--warm">
+          <div class="stat__value">126 days</div>
+          <p class="stat__label">Lead time where forecast skill is still positive</p>
+        </div>
+      </div>
+      <p class="footnote">
+        Figures refer to GEM-2, compared against multi-step diffusion ensembles such as GenCast.
+        Equal-contribution work at Salient Predictions, described in
+        <a class="link" href="https://arxiv.org/abs/2601.03753" target="_blank" rel="noopener">arXiv:2601.03753</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ======================================================== PRACTICE -->
+  <section class="section" id="practice">
+    <div class="wrap">
+      <div class="sechead">
+        <div>
+          <span class="rail__index">01</span>
+          <h2 class="rail__title">The practice</h2>
+        </div>
+        <p class="rail__note">Three things I do well enough to charge for. Everything else I will tell you to hire elsewhere.</p>
+      </div>
+
+      <div>
+        <div class="cards" data-reveal>
+
+          <article class="card">
+            <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true">
+              <path d="M3 18c3-9 6-9 9 0s6 9 9 0"/>
+              <path d="M3 6h18" opacity=".4"/>
+            </svg>
+            <h3 class="h3">Generative modelling</h3>
+            <p>
+              Diffusion, flow matching and functional generative networks for high-dimensional
+              conditional sampling. When iterative denoising is too slow or too expensive to run,
+              I collapse it into single-shot generation without losing ensemble calibration,
+              fidelity or diversity.
+            </p>
+            <ul class="tags">
+              <li>Diffusion</li><li>Flow matching</li><li>FGN</li>
+              <li>One-shot generation</li><li>Ensemble calibration</li><li>CRPS / REV</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true">
+              <circle cx="6" cy="7" r="2.4"/><circle cx="18" cy="7" r="2.4"/><circle cx="12" cy="18" r="2.4"/>
+              <path d="M7.6 8.8 10.6 16M16.4 8.8 13.4 16M8.4 7h7.2"/>
+            </svg>
+            <h3 class="h3">LLM and agent systems</h3>
+            <p>
+              Fine-tuning at 70B scale with PEFT/LoRA and 8-bit quantisation, retrieval that
+              returns the right context instead of merely nearby text, and multi-agent setups
+              that hold together under self-play. Typed outputs, and an evaluation harness
+              before anything reaches a user.
+            </p>
+            <ul class="tags">
+              <li>PEFT / LoRA</li><li>bitsandbytes</li><li>FAISS</li><li>Chroma</li>
+              <li>ColBERT</li><li>LangChain</li><li>DSPy</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="6" rx="1"/><rect x="3" y="15" width="18" height="6" rx="1"/>
+              <path d="M7 6h.01M7 18h.01M12 9v6"/>
+            </svg>
+            <h3 class="h3">ML in production</h3>
+            <p>
+              A model that only runs in a notebook is not finished. Distributed multi-GPU
+              training, containerised inference, serverless GPU deployment, monitoring and
+              retraining. I have taken a paid product through this entire stack on my own,
+              billing included.
+            </p>
+            <ul class="tags">
+              <li>PyTorch DDP</li><li>Docker</li><li>RunPod</li><li>GCP Cloud Run</li>
+              <li>xarray / dask</li><li>WandB</li><li>Hydra</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ WORK -->
+  <section class="section" id="work">
+    <div class="wrap split">
+      <div class="rail">
+        <span class="rail__index">02</span>
+        <h2 class="rail__title">Selected work</h2>
+        <p class="rail__note">Problem, what got built, and the number it moved.</p>
+      </div>
+
+      <div>
+        <ol class="work">
+
+          <li data-reveal>
+            <div class="work__head">
+              <h3 class="work__title">GEM-1, GEM-2, GEM-3</h3>
+              <span class="work__meta">Salient Predictions · 2023–2026</span>
+            </div>
+            <p>
+              Co-led the technical design and training of the diffusion and flow-matching models
+              behind GEM-1, then GEM-2 (equal contribution): a ~275M-parameter one-shot extension
+              of diffusion models built on functional generative networks. It jointly models global
+              atmospheric dynamics and the variables people actually decide on — daily maximum and
+              minimum temperature, precipitation, wind extremes — in a single forward pass. I owned
+              the pipeline end to end: architecture, training data, distributed multi-GPU training,
+              evaluation systems and deployment. Co-author on GEM-3, now in production.
+            </p>
+            <p class="result">
+              Outperforms NOAA GEFS and ECMWF IFS ENS on <span class="num">CRPS</span> skill at
+              <span class="num">1–40</span> day leads, with state-of-the-art relative economic value
+              and positive skill maintained to <span class="num">126</span> days. Two US AI patents.
+            </p>
+            <ul class="linkrow">
+              <li><a href="https://arxiv.org/abs/2601.03753" target="_blank" rel="noopener">arXiv:2601.03753
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 3h7v7M13 3 4 12"/></svg></a></li>
+              <li><a href="https://www.linkedin.com/posts/salient-weather_salientgem-aiweather-generativeai-activity-7442208095973584896-NGvs" target="_blank" rel="noopener">GEM-3 announcement
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 3h7v7M13 3 4 12"/></svg></a></li>
+            </ul>
+          </li>
+
+          <li data-reveal>
+            <div class="work__head">
+              <h3 class="work__title">transcribevoice.app</h3>
+              <span class="work__meta">Solo product · live</span>
+            </div>
+            <p>
+              A paid audio-transcription service, built alone. WhisperX plus NeMo speaker
+              diarisation packaged as a multi-stage Docker image on RunPod serverless GPUs;
+              Next.js on Vercel; Firebase for auth and Firestore; Cloud Storage for audio and
+              transcripts; Stripe Checkout for credits; Cloud Functions running the yt-dlp and
+              ffmpeg transcode pipeline.
+            </p>
+            <p class="result">
+              Research, infrastructure, frontend, payments and support — one person, one stack,
+              in production.
+            </p>
+            <ul class="linkrow">
+              <li><a href="https://transcribevoice.app" target="_blank" rel="noopener">transcribevoice.app
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 3h7v7M13 3 4 12"/></svg></a></li>
+            </ul>
+          </li>
+
+          <li data-reveal>
+            <div class="work__head">
+              <h3 class="work__title">Menstrual health prediction</h3>
+              <span class="work__meta">Bellabeat (Y Combinator) · 2022–2023</span>
+            </div>
+            <p>
+              A multi-task encoder-decoder transformer over cycle history, symptoms, mood, heart
+              rate, skin temperature and respiratory rate, unified into one pipeline. Shipped to
+              users end to end, from data engineering and GCP monitoring through to how the
+              predictions were presented in the app.
+            </p>
+            <p class="result">
+              Period start MAE <span class="num">2.3</span> days, period end MAE
+              <span class="num">0.68</span> days — roughly <span class="num">50%</span> better than
+              the previous baseline — and ovulation F1 <span class="num">0.922</span>.
+            </p>
+            <ul class="linkrow">
+              <li><a href="https://period-diary.com/scientific-article/period-ovulation-tracking-advanced-menstrual-tracking-algorithms/" target="_blank" rel="noopener">Published article
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 3h7v7M13 3 4 12"/></svg></a></li>
+            </ul>
+          </li>
+
+          <li data-reveal>
+            <div class="work__head">
+              <h3 class="work__title">Kaggle competitions</h3>
+              <span class="work__meta">Expert · rank 551 of 205,000</span>
+            </div>
+            <p>
+              Unfamiliar domain, fixed deadline, top-percentile result — repeatedly, and across
+              modalities that share almost nothing. Lumbar spine MRI classification 15th of 1,874.
+              EEG seizure detection 54th of 2,767. Accelerometer sleep-state time series 42nd of
+              1,877. Vesuvius 3D segmentation 39th of 1,249.
+            </p>
+            <p class="result">
+              The useful signal is not any single placing. It is that medical imaging, EEG, time
+              series and 3D vision all came out in the same band.
+            </p>
+            <ul class="linkrow">
+              <li><a href="https://www.kaggle.com/viktorcikojevic" target="_blank" rel="noopener">Kaggle profile
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 3h7v7M13 3 4 12"/></svg></a></li>
+              <li><a href="https://www.kaggle.com/competitions/rsna-2024-lumbar-spine-degenerative-classification/writeups/derpmaxxing-15th-place-solution" target="_blank" rel="noopener">RSNA solution writeup
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 3h7v7M13 3 4 12"/></svg></a></li>
+            </ul>
+          </li>
+
+          <li data-reveal>
+            <div class="work__head">
+              <h3 class="work__title">Numerai</h3>
+              <span class="work__meta">Classical ML, deployed</span>
+            </div>
+            <p>
+              CatBoost and XGBoost regression on encrypted, era-structured financial features with
+              multi-target training, era-aware hyperparameter sweeps and out-of-fold evaluation.
+              Daily inference runs unattended on Cloud Run behind an HTTP trigger.
+            </p>
+            <p class="result">
+              Proof that not every problem needs a neural network — and that the deployment story
+              matters more than the model choice.
+            </p>
+          </li>
+
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================== APPROACH -->
+  <section class="section" id="approach">
+    <div class="wrap split">
+      <div class="rail">
+        <span class="rail__index">03</span>
+        <h2 class="rail__title">How this works</h2>
+        <p class="rail__note">Small, fixed first step. No retainer before there is evidence.</p>
+      </div>
+
+      <div>
+        <ol class="steps" data-reveal>
+          <li>
+            <h3>Diagnostic sprint</h3>
+            <p>
+              Fixed scope, fixed price, one to two weeks. You bring the problem and whatever
+              historical data exists. You get back a backtested model, an honest evaluation, and a
+              written answer to whether this is worth building at all. Sometimes that answer is no,
+              and this is the cheap way to find out.
+            </p>
+          </li>
+          <li>
+            <h3>Build</h3>
+            <p>
+              Architecture, training, evaluation and deployment of the real system. We agree the
+              metric before I start, and you see progress against it every week rather than at the
+              end.
+            </p>
+          </li>
+          <li>
+            <h3>Keep it alive</h3>
+            <p>
+              Once it runs: retraining, drift monitoring, and the changes that follow from what
+              production teaches you. Monthly, and cancellable.
+            </p>
+          </li>
+        </ol>
+
+        <p class="notice">
+          <strong>Not in scope</strong>
+          24/7 on-call, on-premise or SCADA integration work, and staff augmentation. If that is
+          what the project actually needs, I will say so on the first call rather than three
+          months in.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================= CONTACT -->
+  <section class="section" id="contact">
+    <div class="wrap split">
+      <div class="rail">
+        <span class="rail__index">04</span>
+        <h2 class="rail__title">Contact</h2>
+        <p class="rail__note">Describe the problem in a few sentences. I reply to everything that is not a template.</p>
+      </div>
+
+      <div>
+        <a class="contact__mail" href="mailto:viktor.cikojevic@luna-ai-lab.com?subject=Project%20enquiry">viktor.cikojevic@luna-ai-lab.com</a>
+
+        <ul class="elsewhere" data-reveal>
+          <li><a href="https://linkedin.com/in/viktor-cikojevic-9546161a2" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.6c0-1.34-.03-3.06-1.9-3.06-1.9 0-2.2 1.45-2.2 2.96V21h-4z"/></svg>
+            LinkedIn</a></li>
+          <li><a href="https://github.com/viktorcikojevic" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+            GitHub</a></li>
+          <li><a href="https://www.kaggle.com/viktorcikojevic" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 20V4M4 14l8-7M9 11l7 9"/></svg>
+            Kaggle</a></li>
+          <li><a href="https://scholar.google.com/citations?user=LbRhAdIAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 4 2 9l10 5 10-5-10-5z"/><path d="M6 11.5V16c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/></svg>
+            Google Scholar</a></li>
+          <li><a href="https://arxiv.org/abs/2601.03753" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4"/></svg>
+            arXiv</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <span>Luna AI Lab d.o.o. — Split, Croatia</span>
+    <span><a href="/viktor/">Full CV</a> · <a href="mailto:viktor.cikojevic@luna-ai-lab.com">Email</a> · <span id="year">2026</span></span>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Luna AI Lab",
+  "legalName": "Luna AI Lab d.o.o.",
+  "url": "https://luna-ai-lab.com/",
+  "email": "viktor.cikojevic@luna-ai-lab.com",
+  "description": "A one-person machine learning research studio working on generative and probabilistic modelling, LLM and agent systems, and production ML.",
+  "address": { "@type": "PostalAddress", "addressLocality": "Split", "addressCountry": "HR" },
+  "founder": {
+    "@type": "Person",
+    "name": "Viktor Cikojević",
+    "jobTitle": "ML Research Engineer",
+    "url": "https://luna-ai-lab.com/viktor/",
+    "sameAs": [
+      "https://github.com/viktorcikojevic",
+      "https://www.kaggle.com/viktorcikojevic",
+      "https://linkedin.com/in/viktor-cikojevic-9546161a2",
+      "https://scholar.google.com/citations?user=LbRhAdIAAAAJ&hl=en"
+    ]
+  }
+}
+</script>
+
+<script src="/main.js" defer></script>
+</body>
 </html>
