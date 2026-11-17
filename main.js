@@ -1,4 +1,4 @@
-/* Luna AI Lab — hero ensemble canvas + small page interactions.
+/* Luna AI Lab — hero ensemble canvas and footer year.
    No dependencies. Every effect here is decorative; the page reads fine without it. */
 
 (function () {
@@ -10,38 +10,6 @@
 
   var yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
-
-  /* --------------------------------------------------------- scroll reveal */
-
-  var revealables = document.querySelectorAll('[data-reveal]');
-
-  if (!('IntersectionObserver' in window) || reduceMotion.matches) {
-    Array.prototype.forEach.call(revealables, function (el) {
-      el.classList.add('is-visible');
-    });
-  } else {
-    var revealObserver = new IntersectionObserver(
-      function (entries) {
-        entries.forEach(function (entry) {
-          if (!entry.isIntersecting) return;
-          entry.target.classList.add('is-visible');
-          revealObserver.unobserve(entry.target);
-        });
-      },
-      { rootMargin: '0px 0px -8% 0px', threshold: 0.08 }
-    );
-    Array.prototype.forEach.call(revealables, function (el) {
-      revealObserver.observe(el);
-    });
-
-    /* Safety net: content must never stay invisible because an observer was
-       throttled or never fired. */
-    window.setTimeout(function () {
-      Array.prototype.forEach.call(revealables, function (el) {
-        el.classList.add('is-visible');
-      });
-    }, 3000);
-  }
 
   /* ------------------------------------------------------- ensemble canvas */
 
