@@ -492,12 +492,12 @@ strong {
   }
 
   .proof {
-    grid-template-columns: 1.7fr 1fr 1fr;
+    grid-template-columns: 1.45fr 1.45fr 1fr 1fr;
   }
 }
 
 .skillgrid li,
-.proof a {
+.proof li > * {
   background: var(--bg);
   padding: clamp(0.6rem, 1.6vh, 0.95rem) 1.1rem;
   font-size: 0.875rem;
@@ -515,7 +515,7 @@ strong {
   display: flex;
 }
 
-.proof a {
+.proof li > * {
   flex: 1;
   text-decoration: none;
   font-size: 0.8125rem;
@@ -533,6 +533,28 @@ strong {
 
 .proof a:hover {
   background: var(--surface);
+}
+
+/* Toptal's embed, markup and styles unchanged. Stacked under the proof row on
+   narrow screens, parked beside the headline when there is room. */
+.badge {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.badge a {
+  text-decoration: none;
+}
+
+@media (min-width: 1000px) {
+  .badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 0;
+    zoom: 0.72;
+  }
 }
 
 .home .footer {
