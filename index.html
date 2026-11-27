@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Luna AI Lab. Generative AI, AI agents and deep learning research</title>
-<meta name="description" content="Luna AI Lab is the studio of Viktor Cikojević, PhD, in Split, Croatia. AI-generated promo videos and imagery, AI agents, and custom deep learning models trained from scratch.">
+<title>Luna AI Lab. Generative models and AI agents that run in production</title>
+<meta name="description" content="Luna AI Lab is the one-person studio of Viktor Cikojević, PhD, in Split, Croatia. Generative models, AI agents and LLM systems, production ML, computer vision, forecasting, and speech and audio.">
 <link rel="canonical" href="https://luna-ai-lab.com/">
 <meta name="theme-color" content="#08090b">
 <meta name="author" content="Viktor Cikojević">
@@ -12,14 +12,14 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://luna-ai-lab.com/">
 <meta property="og:site_name" content="Luna AI Lab">
-<meta property="og:title" content="Luna AI Lab. Generative AI, AI agents and deep learning research">
-<meta property="og:description" content="Luna AI Lab is the studio of Viktor Cikojević, PhD, in Split, Croatia. AI-generated promo videos and imagery, AI agents, and custom deep learning models trained from scratch.">
+<meta property="og:title" content="Luna AI Lab. Generative models and AI agents that run in production">
+<meta property="og:description" content="The one-person studio of Viktor Cikojević, PhD. Generative models, AI agents and LLM systems, production ML, computer vision, forecasting, and speech and audio.">
 <meta property="og:image" content="https://luna-ai-lab.com/assets/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Luna AI Lab. Generative AI, AI agents and deep learning research">
-<meta name="twitter:description" content="Luna AI Lab is the studio of Viktor Cikojević, PhD, in Split, Croatia. AI-generated promo videos and imagery, AI agents, and custom deep learning models trained from scratch.">
+<meta name="twitter:title" content="Luna AI Lab. Generative models and AI agents that run in production">
+<meta name="twitter:description" content="The one-person studio of Viktor Cikojević, PhD. Generative models, AI agents and LLM systems, production ML, computer vision, forecasting, and speech and audio.">
 <meta name="twitter:image" content="https://luna-ai-lab.com/assets/og.jpg">
 
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
@@ -28,7 +28,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=Instrument+Serif:ital@0;1&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
 <link rel="stylesheet" href="/styles.css">
 </head>
-<body>
+<body class="home">
 
 <a class="skip" href="#main">Skip to content</a>
 
@@ -43,168 +43,43 @@
     </a>
     <nav aria-label="Primary">
       <ul class="nav__links">
-        <li class="nav__anchor"><a href="#creative">Creative</a></li>
-        <li class="nav__anchor"><a href="#agents">Agentic AI</a></li>
-        <li class="nav__anchor"><a href="#research">Research</a></li>
         <li><a href="/viktor/">CV</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="mailto:viktor.cikojevic@luna-ai-lab.com?subject=Project%20enquiry">Contact</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-<main id="main">
-
-<section class="hero" id="top">
-  <video class="hero__video" id="hero-video" data-src="/assets/hero.mp4" poster="/assets/hero.jpg" muted loop playsinline preload="none" aria-hidden="true"></video>
+<main id="main" class="hero">
+  <canvas id="ensemble" aria-hidden="true"></canvas>
   <div class="wrap hero__inner">
-    <h1 class="display">I help companies grow with generative AI and AI agents.</h1>
+    <h1 class="display">I build generative models and AI agents that <em>run in production.</em></h1>
+
     <p class="lede hero__lede">
-      Luna AI Lab is the studio of Viktor Cikojević, PhD, in Split, Croatia.
-      I make promo videos and imagery with AI, build AI agents, and train deep learning models from scratch.
+      Luna AI Lab is the one-person studio of Viktor Cikojević, PhD, in Split, Croatia.
+      I design, train and deploy machine-learning systems for companies.
     </p>
-    <div class="hero__cta">
-      <a class="btn btn--primary" href="mailto:viktor.cikojevic@luna-ai-lab.com?subject=Project%20enquiry">Email me</a>
-      <a class="btn btn--ghost" href="https://instagram.com/lunaailab" target="_blank" rel="noopener">Instagram</a>
+
+    <ul class="skillgrid">
+      <li><strong>Generative models</strong> Diffusion, flow matching, one-shot generation</li>
+      <li><strong>AI agents and LLM systems</strong> Agents, fine-tuning, retrieval</li>
+      <li><strong>Production ML</strong> Multi-GPU training, serverless GPU inference</li>
+      <li><strong>Computer vision</strong> Medical imaging, 3D segmentation</li>
+      <li><strong>Forecasting</strong> Probabilistic weather and time-series models</li>
+      <li><strong>Speech and audio</strong> Transcription with speaker labels</li>
+    </ul>
+
+    <ul class="proof">
+      <li><span><strong>Large Behavioural Models at 42ai</strong> Transformer foundation models pre-trained from scratch on behavioural event data</span></li>
+      <li><a href="https://arxiv.org/abs/2601.03753" target="_blank" rel="noopener"><strong>GEM-1, 2 and 3 at Salient Predictions</strong> GEM-2 beats the NOAA and ECMWF ensemble weather forecasts</a></li>
+      <li><a href="/viktor/"><strong>2 US AI patents</strong> Co-invented, including GEM-2</a></li>
+      <li><a href="https://www.kaggle.com/viktorcikojevic" target="_blank" rel="noopener"><strong>Kaggle Expert, top 1%</strong> Rank 551 of 205,000</a></li>
+    </ul>
+
+    <div class="badge">
+  <div id=r><style>@import"https://use.typekit.net/kmj5qkr.css";:root{--h:polygon(50% 0,100% 24%,100% 76%,50% 100%,0 76%,0 24%)}.h{display:inline-block;background:#25a9ef;padding:6px;clip-path:var(--h)}.a{width:200px;padding:24px 0 40px;display:flex;flex-direction:column;align-items:center;gap:8px;color:#fff;text-align:center;background:linear-gradient(153deg,#0667ff 18%,#204ecf 40%,#0f256e 80%);clip-path:var(--h);box-shadow:0 28px 50px rgba(6,30,96,.35)}#r{font-family:proxima-nova,Arial,sans-serif}.b{margin:0;font-size:19px;font-weight:700;line-height:1}.c{width:120px;height:1px;background:#25a9ef}.d{font-size:16px;opacity:.8;margin-bottom:-6px}.f{display:inline-flex;align-items:center;justify-content:center;padding:4px 20px;border-radius:6px;background:#296bff;color:#fff;font-size:16px;font-weight:500;text-decoration-thickness:.5px;text-underline-offset:2px}</style><div class=h><div class=a><svg width=64 viewBox="0 0 60 17" xmlns="http://www.w3.org/2000/svg"><path d="m20.85 6.38 6.06-.89 2.72-5.49 2.71 5.49 6.06.89-4.39 4.28 1.04 6.03-5.42-2.85-5.43 2.85 1.04-6.03zm33.06 7.17 1.85-.27.82-1.67.83 1.67 1.84.27-1.33 1.31.31 1.83-1.65-.87-1.66.87.32-1.83zm-3.38-3.01-3.61-.52-1.61-3.26-1.62 3.26-3.6.52 2.6 2.55-.61 3.59 3.23-1.69 3.21 1.69-.61-3.59zm-45.19 3.01-1.85-.27-.82-1.67-.83 1.67-1.84.27 1.33 1.31-.31 1.83 1.65-.87 1.65.87-.31-1.83zm3.38-3.01 3.61-.52 1.61-3.26 1.61 3.26 3.61.52-2.6 2.55.61 3.59-3.23-1.69-3.22 1.69.62-3.59z" fill="#fff"/></svg><h3 class=b>TOP 3% TALENT</h3><div class=c></div><span class=d>Vetted by</span><svg viewBox="0 0 108 30" width="100" xmlns="http://www.w3.org/2000/svg"><g clip-rule="evenodd" fill="#fff" fill-rule="evenodd"><path d="m8.11 0 6.71 6.7c.05.05.09.1.15.15l5.85 5.85-9.51 9.46 4.35 4.36-2.91 2.89-6.66-6.66c-.08-.07-.16-.15-.24-.23l-5.85-5.84 9.48-9.43-4.32-4.31zm4.25 10.5c-.09-.02-.18-.02-.26 0-.09.03-.16.07-.32.22l-5.41 5.39c-.16.16-.2.23-.22.31-.03.09-.03.18 0 .26.02.09.07.17.22.32l1.72 1.72c.15.15.22.19.31.22.09.02.17.02.26 0 .09-.03.16-.07.31-.22l5.41-5.39c.16-.15.2-.23.23-.31.02-.09.02-.17 0-.26s-.07-.16-.22-.31l-1.72-1.72c-.15-.16-.23-.2-.31-.23z"/><path d="m62.65 7.76c2.11 0 3.91.82 5.34 2.4 1.46 1.53 2.19 3.64 2.18 6.26 0 2.56-.75 4.8-2.24 6.38-1.47 1.57-3.34 2.37-5.58 2.37-1.93-.01-3.68-.7-4.84-1.89l-.16-.17-.01 6.75-3.82-.01v-.28l.04-21.61h3.8l-.01 2.64c1.25-1.41 3.26-2.84 5.3-2.84zm24.45.06c2.18 0 3.68.49 4.84 1.44 1.11.92 1.7 2.56 1.75 4.29v.26l-.02 11.14h-3.87v-.46c0-.48 0-.97 0-1.47-1.12 1.55-2.68 2.3-4.76 2.3-1.65 0-3.05-.5-4.07-1.43-1.03-.94-1.58-2.23-1.58-3.73.02-2.83 2.02-4.79 5.52-5.4l.27-.05 4.64-.73v-.37c0-.78-.23-1.72-.69-2.11-.47-.4-1.04-.73-2.03-.73-2.73 0-3.29 2.01-3.32 3.02v.09l-3.42.04c0-1.49.69-3.42 2.08-4.63 1.12-.97 2.75-1.42 4.33-1.47h.3zm-14.98-4.36h3.81l-.01 4.56h3.53v3.18l-3.54-.01-.01 8.54c0 .94.19 1.56.6 1.85.43.3 1.3.02 1.3.02l.34 3.32s-1.2.31-1.96.31c-.99 0-1.84-.25-2.49-.75-1.06-.8-1.6-2.2-1.6-4.17l.02-9.12-3.19-3.19 3.2.01zm-22.46 6.8c1.1 1.13 2.41 3.14 2.4 6.26-.01 3.11-1.32 5.11-2.41 6.24-1.5 1.54-3.54 2.42-5.59 2.42-.08 0-.16 0-.25-.01-2.19-.01-4.13-.79-5.75-2.33-1.63-1.55-2.46-3.68-2.46-6.36s.84-4.82 2.47-6.36c1.62-1.53 3.55-2.3 5.75-2.3 2.17-.07 4.29.83 5.84 2.44zm-8.81-7.04v3.77l-7.36.01.02 17.97-3.97-.01v-.34l.03-17.63h-7.51l.01-3.77zm54.68.25 3.42.01v.09l-.03 21.38-3.42-.01v-.1zm-5.71 13.58-3.81.64c-1.86.32-2.72 1.04-2.73 2.3-.01 1.15.81 1.92 2.09 1.99h.16.02c2.44 0 4.17-1.9 4.26-4.67l.01-.22zm-46.02-5.84c-1.28 0-2.39.49-3.29 1.47-.88.96-1.33 2.24-1.33 3.81 0 1.58.45 2.86 1.33 3.82.89.98 2 1.47 3.28 1.48 1.3 0 2.42-.49 3.31-1.47.9-.98 1.35-2.26 1.36-3.81.01-1.56-.45-2.84-1.35-3.82s-2.01-1.48-3.31-1.48zm17.94.12h-.02c-1.28 0-2.34.46-3.24 1.43-.9.94-1.35 2.16-1.36 3.63 0 1.49.45 2.83 1.35 3.8.92.95 1.98 1.42 3.25 1.42 1.29 0 2.38-.48 3.25-1.41.91-.97 1.35-2.3 1.36-3.79 0-1.48-.46-2.7-1.34-3.63-.87-.96-1.96-1.45-3.25-1.45z"/></g></svg><a target="_blank" class=f href=https://www.toptal.com/developers/resume/viktor-cikojevic#60bRwn>Hire me</a></div></div></div>
     </div>
   </div>
-  <div class="hero__meta">
-    <button class="hero__pause" type="button" aria-pressed="false" hidden>Pause video</button>
-    <p class="hero__caption">Generated with AI</p>
-  </div>
-</section>
-
-<section class="section offer" id="creative">
-  <div class="wrap">
-    <header class="offer__head">
-      <p class="eyebrow">01 Creative</p>
-      <h2 class="h2">Promo material and stories, made with AI.</h2>
-      <p class="prose">Videos, product shots and brand stories for your business, without a film crew or a photo shoot.</p>
-      <ul class="offer__list">
-        <li>Promo videos and reels</li>
-        <li>Product and location photography</li>
-        <li>Brand stories</li>
-      </ul>
-    </header>
-    <div class="films">
-      <figure class="film">
-        <div class="film__frame">
-          <video controls data-src="/assets/film-nonina-grana.mp4" poster="/assets/film-nonina-grana.jpg" muted loop playsinline preload="none" aria-label="Nonina Grana, a 33-second olive oil film generated with AI"></video>
-        </div>
-        <figcaption>
-          <strong>Nonina Grana, olive oil</strong>
-          A woman far from home opens a bottle of olive oil and is a girl in her grandmother's grove again.
-          <span class="film__note">Concept film for a fictional brand, generated with AI by Luna AI Lab. Turn the sound on.</span>
-        </figcaption>
-      </figure>
-      <figure class="film">
-        <div class="film__frame">
-          <video controls data-src="/assets/film-pekarnica-zora.mp4" poster="/assets/film-pekarnica-zora.jpg" muted loop playsinline preload="none" aria-label="Pekarnica Zora, a 33-second bakery film generated with AI"></video>
-        </div>
-        <figcaption>
-          <strong>Pekarnica Zora, bakery</strong>
-          One day of bread from a stone bakery, out of the oven and onto a date, a family lunch and a dinner by the sea.
-          <span class="film__note">Concept film for a fictional brand, generated with AI by Luna AI Lab. Turn the sound on.</span>
-        </figcaption>
-      </figure>
-    </div>
-    <p class="offer__cta"><a class="btn btn--primary" href="mailto:viktor.cikojevic@luna-ai-lab.com?subject=Project%20enquiry">Email me about a video</a></p>
-  </div>
-</section>
-
-<section class="section offer" id="agents">
-  <div class="wrap">
-    <header class="offer__head">
-      <p class="eyebrow">02 Agentic AI</p>
-      <h2 class="h2">AI agents that take on multi-step work.</h2>
-      <p class="prose">Agents that search, reason and act across your tools, and retrieval systems that answer from your own documents.</p>
-    </header>
-    <div class="cards cards--2">
-        <article class="card">
-          <figure class="card__media">
-            <img src="/assets/agent-20q.webp" alt="Illustration of an AI agent playing 20 Questions" width="1600" height="1200" loading="lazy" decoding="async">
-            <figcaption>Illustration generated with AI</figcaption>
-          </figure>
-          <h3>LLM 20 Questions agent</h3>
-          <p>A fully offline agent that plays all three roles of 20 Questions: 4-bit Llama 3 with ColBERT retrieval on a single T4 GPU. 87th of 832 on Kaggle, top 11%.</p>
-          <a class="link card__link" href="https://www.kaggle.com/competitions/llm-20-questions" target="_blank" rel="noopener">Kaggle competition</a>
-        </article>
-        <article class="card">
-          <figure class="card__media">
-            <img src="/assets/agent-rag.webp" alt="Illustration of retrieval over science articles" width="1600" height="1200" loading="lazy" decoding="async">
-            <figcaption>Illustration generated with AI</figcaption>
-          </figure>
-          <h3>Science exam RAG</h3>
-          <p>Retrieval over 131k Wikipedia science pages and fine-tuned LLMs, running offline under strict GPU and time limits.</p>
-          <a class="link card__link" href="https://www.kaggle.com/competitions/kaggle-llm-science-exam" target="_blank" rel="noopener">Kaggle competition</a>
-        </article>
-    </div>
-  </div>
-</section>
-
-<section class="section offer" id="research">
-  <div class="wrap">
-    <header class="offer__head">
-      <p class="eyebrow">03 Deep learning research</p>
-      <h2 class="h2">Custom models, trained from scratch.</h2>
-      <p class="prose">When off-the-shelf AI is not enough, I design, train and deploy deep learning models for the problem.</p>
-    </header>
-    <div class="cards cards--4">
-        <article class="card">
-          <figure class="card__media">
-            <img src="/assets/research-gem.webp" alt="Illustration of a generative weather model" width="1600" height="1200" loading="lazy" decoding="async">
-            <figcaption>Illustration generated with AI</figcaption>
-          </figure>
-          <h3>GEM-1, 2 and 3 at Salient Predictions</h3>
-          <p>Generative weather models. GEM-2 beats the NOAA and ECMWF ensemble forecasts at 1 to 40 day leads.</p>
-          <a class="link card__link" href="https://arxiv.org/abs/2601.03753" target="_blank" rel="noopener">Read the paper</a>
-        </article>
-        <article class="card">
-          <figure class="card__media">
-            <img src="/assets/research-lbm.webp" alt="Illustration of a transformer trained on behavioural events" width="1600" height="1200" loading="lazy" decoding="async">
-            <figcaption>Illustration generated with AI</figcaption>
-          </figure>
-          <h3>Large Behavioural Models at 42ai</h3>
-          <p>Transformer foundation models pre-trained from scratch on behavioural event data.</p>
-          <a class="link card__link" href="/viktor/#experience">See the role</a>
-        </article>
-        <article class="card">
-          <figure class="card__media">
-            <img src="/assets/research-medical.webp" alt="Illustration of a lumbar spine MRI scan" width="1600" height="1200" loading="lazy" decoding="async">
-            <figcaption>Illustration generated with AI</figcaption>
-          </figure>
-          <h3>Medical imaging</h3>
-          <p>Lumbar spine MRI classification, 15th of 1,874 (top 1%). 3D segmentation for the Vesuvius Challenge, top 3%.</p>
-          <a class="link card__link" href="https://www.kaggle.com/competitions/rsna-2024-lumbar-spine-degenerative-classification/writeups/derpmaxxing-15th-place-solution" target="_blank" rel="noopener">Solution writeup</a>
-        </article>
-        <article class="card">
-          <figure class="card__media">
-            <img src="/assets/research-health.webp" alt="Illustration of a health model running on a phone" width="1600" height="1200" loading="lazy" decoding="async">
-            <figcaption>Illustration generated with AI</figcaption>
-          </figure>
-          <h3>On-device health model at Bellabeat</h3>
-          <p>A multi-task transformer for menstrual health prediction, running offline in the iOS and Android apps.</p>
-          <a class="link card__link" href="/viktor/#experience">See the role</a>
-        </article>
-    </div>
-    <div class="creds">
-      <p>PhD in computational physics · 2 US AI patents · 10 Q1 papers · Kaggle Expert, top 1%</p>
-      <a class="link" href="/viktor/">Full CV</a>
-    </div>
-  </div>
-</section>
-
-<section class="section contact" id="contact">
-  <div class="wrap">
-    <h2 class="display">Tell me what you want to build.</h2>
-    <a class="contact__mail" href="mailto:viktor.cikojevic@luna-ai-lab.com?subject=Project%20enquiry">viktor.cikojevic@luna-ai-lab.com</a>
-    <p class="contact__meta">
-      <a class="link" href="https://instagram.com/lunaailab" target="_blank" rel="noopener">@lunaailab on Instagram</a>
-      <span>Split, Croatia</span>
-    </p>
-  </div>
-</section>
-
 </main>
 
 <footer class="footer">
@@ -223,9 +98,6 @@
       <li><a href="https://scholar.google.com/citations?user=LbRhAdIAAAAJ&amp;hl=en" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 4 2 9l10 5 10-5-10-5z"/><path d="M6 11.5V16c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/></svg>
             Google Scholar</a></li>
-      <li><a href="https://instagram.com/lunaailab" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.6" fill="currentColor"/></svg>
-            Instagram</a></li>
     </ul>
     <span>Luna AI Lab d.o.o., Split, Croatia</span>
   </div>
@@ -239,9 +111,8 @@
   "legalName": "Luna AI Lab d.o.o.",
   "url": "https://luna-ai-lab.com/",
   "email": "viktor.cikojevic@luna-ai-lab.com",
-  "description": "Luna AI Lab is the studio of Viktor Cikojević, PhD, in Split, Croatia. AI-generated promo videos and imagery, AI agents, and custom deep learning models trained from scratch.",
+  "description": "The one-person studio of Viktor Cikojević, PhD. Generative models, AI agents and LLM systems, production ML, computer vision, forecasting, and speech and audio.",
   "address": { "@type": "PostalAddress", "addressLocality": "Split", "addressCountry": "HR" },
-  "sameAs": ["https://instagram.com/lunaailab"],
   "founder": {
     "@type": "Person",
     "name": "Viktor Cikojević",
