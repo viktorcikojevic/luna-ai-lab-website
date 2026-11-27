@@ -463,13 +463,40 @@ strong {
   color: var(--text-mute);
 }
 
-.hero__caption {
+.hero__meta {
   position: absolute;
   right: var(--gutter);
   bottom: 1rem;
   z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hero__caption {
+  margin: 0;
   color: #aab0b8;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+}
+
+.hero__pause {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.04em;
+  color: #d8dbe0;
+  background: rgba(8, 9, 11, 0.55);
+  border: 1px solid var(--border-lit);
+  border-radius: 999px;
+  padding: 0.3rem 0.75rem;
+  cursor: pointer;
+}
+
+.hero__pause:hover {
+  color: var(--accent);
+}
+
+.hero__pause[hidden] {
+  display: none;
 }
 
 /* ------------------------------------------------------- offer sections -- */
