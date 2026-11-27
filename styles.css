@@ -523,50 +523,6 @@ strong {
   margin-bottom: clamp(2.25rem, 5vw, 3.5rem);
 }
 
-.offer__list {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.offer__list li {
-  padding: 0.35rem 0.85rem;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  font-size: 0.875rem;
-  color: var(--text);
-}
-
-.offer__cta {
-  margin-top: clamp(2rem, 4vw, 3rem);
-}
-
-/* 9:16 and 16:9 at the same height: widths follow the aspect ratios. */
-.soon {
-  display: grid;
-  place-content: center;
-  gap: 0.75rem;
-  padding: clamp(3rem, 8vw, 5.5rem) 2rem;
-  text-align: center;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-}
-
-.soon__label {
-  margin: 0;
-  font-family: var(--font-display);
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  line-height: 1;
-  color: var(--text);
-}
-
-.soon__text {
-  margin: 0;
-  color: var(--text-dim);
-}
-
 .cards {
   display: grid;
   gap: clamp(1.5rem, 3vw, 2.25rem);
