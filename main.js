@@ -18,7 +18,6 @@
   }
 
   function play(video) {
-    if (!allowed(video)) return;
     if (!video.getAttribute('src')) video.src = video.getAttribute('data-src');
     var p = video.play();
     if (p && p.catch) p.catch(function () {});
@@ -27,7 +26,7 @@
   var inView = new Set();
 
   function sync(video) {
-    if (inView.has(video) && !document.hidden) play(video);
+    if (inView.has(video) && !document.hidden && allowed(video)) play(video);
     else video.pause();
   }
 

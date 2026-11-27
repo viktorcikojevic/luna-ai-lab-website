@@ -418,10 +418,16 @@ strong {
 }
 
 @media (max-width: 899px) {
+  /* Keep the moon in frame when the 16:9 poster is cropped to a portrait box. */
+  .hero__video {
+    object-position: 80% center;
+  }
+
   .hero::before {
     background: linear-gradient(
       180deg,
-      color-mix(in srgb, var(--bg) 72%, transparent) 0%,
+      color-mix(in srgb, var(--bg) 15%, transparent) 0%,
+      color-mix(in srgb, var(--bg) 70%, transparent) 32%,
       color-mix(in srgb, var(--bg) 86%, transparent) 100%
     );
   }
@@ -463,6 +469,7 @@ strong {
   bottom: 1rem;
   z-index: 2;
   color: #aab0b8;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
 }
 
 /* ------------------------------------------------------- offer sections -- */
