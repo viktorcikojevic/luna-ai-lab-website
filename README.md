@@ -11,9 +11,9 @@ Plain static HTML, CSS and JS. There is no build step and no dependencies.
 | `index.html` | Studio page (`/`) |
 | `viktor/index.html` | Full CV (`/viktor/`) |
 | `styles.css` | Shared design system for every page |
-| `main.js` | In-view video playback (reduced-motion aware, hero video skipped under 720px), footer year |
+| `main.js` | Hero ensemble canvas, footer year |
 | `404.html` | Custom not-found page |
-| `assets/` | Favicon, social preview image, and the page media: `hero.mp4`/`hero.jpg`, `film-nonina-grana.mp4`/`.jpg`, `film-pekarnica-zora.mp4`/`.jpg` (videos with poster stills), and `agent-*.webp`, `research-*.webp` (card images) |
+| `assets/` | Favicon and social preview image |
 | `CNAME` | Custom domain — **do not delete or rename** |
 
 ## Local preview
