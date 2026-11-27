@@ -13,7 +13,7 @@ Plain static HTML, CSS and JS. There is no build step and no dependencies.
 | `styles.css` | Shared design system for every page |
 | `main.js` | In-view video playback (reduced-motion aware, hero video skipped under 720px), footer year |
 | `404.html` | Custom not-found page |
-| `assets/` | Favicon, social preview image, and the page media: `hero.mp4`/`hero.jpg`, `creative-reel.mp4`/`.jpg`, `creative-story.mp4`/`.jpg` (videos with poster stills), and `agent-*.webp`, `research-*.webp` (card images) |
+| `assets/` | Favicon, social preview image, and the page media: `hero.mp4`/`hero.jpg`, `film-nonina-grana.mp4`/`.jpg`, `film-pekarnica-zora.mp4`/`.jpg` (videos with poster stills), and `agent-*.webp`, `research-*.webp` (card images) |
 | `CNAME` | Custom domain — **do not delete or rename** |
 
 ## Local preview
